@@ -35,11 +35,11 @@ var defaultRecipe = recipeRequest{
 
 func main() {
 
-	waterPtr := flag.Float64("water", 64.0, "Wanted water percentage")
-	saltPtr := flag.Float64("salt", 64.0, "Wanted salt percentage")
-	yeastPtr := flag.Float64("yeast", 64.0, "Wanted water percentage")
-	gramsPerPizza := flag.Float64("grams-per-pizza", 250, "grams per pizza")
-	numPizzas := flag.Float64("num-pizzas", 4, "Number of pizzas")
+	waterPtr := flag.Float64("water", defaultRecipe.water, "Wanted water percentage")
+	saltPtr := flag.Float64("salt", defaultRecipe.salt, "Wanted salt percentage")
+	yeastPtr := flag.Float64("yeast", defaultRecipe.yeast, "Wanted water percentage")
+	gramsPerPizza := flag.Float64("grams-per-pizza", defaultRecipe.gramsPerPizza, "grams per pizza")
+	numPizzas := flag.Float64("num-pizzas", defaultRecipe.numPizzas, "Number of pizzas")
 
 	flag.Parse()
 
