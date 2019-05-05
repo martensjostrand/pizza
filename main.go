@@ -29,7 +29,7 @@ type recipe struct {
 var defaultRecipe = recipeRequest{
 	water:         64.0,
 	salt:          2.0,
-	yeast:         0.2,
+	yeast:         0.5,
 	gramsPerPizza: 250,
 	numPizzas:     4}
 
