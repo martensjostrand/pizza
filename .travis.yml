@@ -1,3 +1,5 @@
+language: golang
+
 services:
   - docker
 
